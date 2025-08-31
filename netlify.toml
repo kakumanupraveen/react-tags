@@ -1,0 +1,8 @@
+﻿[build]
+  command = "npx webpack --config webpack-dev-server.config.cjs --mode production && mkdir -p dist && cp -r example/public/* dist/"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
